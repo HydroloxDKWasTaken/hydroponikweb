@@ -18,6 +18,14 @@ main {
     margin-top: 0;
     height: max-content;
 }
+main > img {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    width: 80%;
+    display: block;
+}
 h1 {
     margin: 0;
 }
