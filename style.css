@@ -26,19 +26,26 @@ main > img {
     width: 80%;
     display: block;
 }
+main > h1 {
+    text-align: center;
+}
 
 #stream {
     margin-left: auto;
     margin-right: auto;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
-    width: 80%;
     display: block;
     
 }
 
 h1 {
     margin: 0;
+}
+
+h1 > a {
+    color: bisque;
+    text-decoration: none;
 }
 p {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
