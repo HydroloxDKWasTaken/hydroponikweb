@@ -1,22 +1,24 @@
 
 :root {
-    --color-accent: #4a5d23;
-    --color-2: #104c2f;
-    --color-2-dark: #0b3420;
+    --color-accent: #3681b8;
+    --color-2: #2b6792;
+    --color-2-dark: #3179ac;
+    --color-bg: #ffffff;
 }
 body {
     margin: 0;
-    /* background-color: var(--color-2);
-    color: white; */
+     background-color: #225678;
+    color: black;
+    background-size: cover;
 }
 main {
-    color: white;
-    background-color: var(--color-2);
-    width: 60%;
+    background-color: var(--color-bg);
+    width: 95%;
     margin-right: auto;
     margin-left: auto;
     margin-top: 0;
     height: max-content;
+    padding-top: 1rem;
 }
 main > img {
     margin-left: auto;
@@ -41,6 +43,7 @@ main > h1 {
 
 h1 {
     margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 h1 > a {
