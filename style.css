@@ -40,6 +40,39 @@ main > h1 {
     display: block;
     
 }
+.infoRutor { 
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.infoRutaBildV {
+    background-color: #ffffff;
+    display: inline-block;
+    width: 100%;
+    
+}
+.infoRutaBildH {
+    background-color: #ffffff;
+    display: inline-block;
+    width: 100%;
+}
+.infoRutaBildH > .infoBild {
+    float: right;
+    width: auto;
+}
+.infoRutaBildH > .infoText {
+    float: left;
+    width: 200px;
+}
+.infoRutaBildV > .infoBild {
+    float: left;
+    width: auto;
+}
+.infoRutaBildV > .infoText {
+    float: right;
+    width: 200px;
+}
 
 h1 {
     margin: 0;
