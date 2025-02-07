@@ -1,0 +1,29 @@
+
+
+.bildruta {
+    width:auto;
+    height:500px;
+    margin:10%;
+    margin-top:350px;
+}
+
+#farg1 {
+    background-color: rgb(219, 255, 146);
+}
+
+#farg2 {
+    background-color: rgb(98, 176, 255);
+}
+
+#farg3 {
+    background-color: rgb(229, 79, 15);
+}
+
+#content {
+    background-color: black;
+    width:auto;
+    height:auto;
+    text-align:center;
+    padding:12%;
+}
+
