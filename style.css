@@ -1,10 +1,38 @@
 
+h1 {
+    color: white;
+    font-size: 100px;
+}
+
+h2 {
+    color: white;
+}
 
 .bildruta {
     width:auto;
     height:600px;
     margin:10%;
-    margin-top:350px;
+    margin-top:500px;
+}
+.videoruta {
+    width:auto;
+    height:600px;
+    
+}
+
+.videoruta iframe {
+    
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#menu {
+    color: white;
+    font-size: 10px;
+    float: top;
+    float: right;
 }
 
 #farg1 {
@@ -13,10 +41,6 @@
 
 #farg2 {
     background-color: rgb(98, 176, 255);
-}
-
-#farg3 {
-    background-color: rgb(229, 79, 15);
 }
 
 #content {
