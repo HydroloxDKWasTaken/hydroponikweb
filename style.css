@@ -1,56 +1,4 @@
 
-<<<<<<< HEAD
-h1 {
-    color: white;
-    font-size: 100px;
-}
-
-h2 {
-    color: white;
-}
-
-.bildruta {
-    width:auto;
-    height:600px;
-    margin:10%;
-    margin-top:500px;
-}
-.videoruta {
-    width:auto;
-    height:600px;
-    
-}
-
-.videoruta iframe {
-    
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-#menu {
-    color: white;
-    font-size: 10px;
-    float: top;
-    float: right;
-}
-
-#farg1 {
-    background-color: rgb(219, 255, 146);
-}
-
-#farg2 {
-    background-color: rgb(98, 176, 255);
-}
-
-#content {
-    background-color: black;
-    width:auto;
-    height:auto;
-    text-align:center;
-    padding:12%;
-=======
 /* Jag har fixat paralaxen. Lek lite med färger och sånt och se om ni kan embedda livestreamen */
 
 
@@ -59,7 +7,6 @@ body, html {
     margin: 0;
     color:#777;
     font: 400 15px/1.8 "Lato", sans-serif;
->>>>>>> aa5327377e469a41d3573168ced7d2406bb359c6
 }
  
 /* För att skapa en ny backgrundsbild så lägger ni till namnet här 
