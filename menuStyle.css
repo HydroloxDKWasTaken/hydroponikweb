@@ -1,0 +1,59 @@
+
+.btn{
+    text-decoration: none;
+    color: #fff;    
+}
+.sidenav{
+  padding: 10px 20px;
+  width: 0;
+  transition-delay: 0.3s;
+
+  transition: 0.5s ease-in-out;
+}
+
+
+
+.active .sidenav {
+  transition: 0.5s ease-in-out;
+  height: 100vh;
+  width: 220px;
+  position: fixed;
+  
+  padding: 10px 0;
+}
+
+.items {
+  padding: 20px 0;
+  display: none;
+}
+
+.active .items{
+    display: block;
+}
+
+
+.items ul {
+  list-style: none;
+}
+.items ul li {
+  background: rgba(255, 255, 255, 0.2);
+  margin: 10px 0;
+  height: 40px;
+  transition: 0.5s ease-in;
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 16px;
+  letter-spacing: 1px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.items li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 0 10px;
+  letter-spacing: 1px;
+}
