@@ -1,7 +1,27 @@
-const btn = document.querySelector(".btn");
-        
+document.addEventListener("DOMContentLoaded", () => {
+    const btn = document.querySelector(".btn"); // Hämtar menuknappen
+    const sidenav = document.querySelector(".sidenav"); // Hämtar sidomenyn
+    const menuLinks = document.querySelectorAll(".items a"); // Hämtar alla länkar i menyn
 
-btn.addEventListener("click",()=>{
+    // Öppna och stäng menyn vid knapptryck
+    btn.addEventListener("click", (event) => {
+        document.body.classList.toggle("active");
+        event.stopPropagation(); // Förhindra att klick händelsen bubblar upp
+    });
+    console.log(menuLinks);
+    // Stäng menyn när man klickar på en länk
+    menuLinks.forEach(link => {
+        console.log("sork");
+        link.addEventListener("click", () => {
+            console.log("Hej världen!");
+            document.body.classList.remove("active");
+        });
+    });
 
-    document.body.classList.toggle("active")
-})
+    // Stäng menyn om man klickar utanför den
+    document.addEventListener("click", (event) => {
+        if (!sidenav.contains(event.target) && !btn.contains(event.target)) {
+            document.body.classList.remove("active");
+        }
+    });
+});
