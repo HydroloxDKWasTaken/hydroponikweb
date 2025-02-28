@@ -1,27 +1,28 @@
 
 /* Jag har fixat paralaxen. Lek lite med färger och sånt och se om ni kan embedda livestreamen */
 
-
 body, html {
     height: 100%;
     margin: 0;
     color:#777;
     font: 400 15px/1.8 "Lato", sans-serif;
+    scroll-behavior: smooth;
 }
  
 /* För att skapa en ny backgrundsbild så lägger ni till namnet här 
 och lägger till en klass med namnet nedanför som bara innehåller 
 bild info och höjd */
 
-.bgimg-1, .bgimg-2, .bgimg-3 {
+.bgimg-1, .bgimg-2, .bgimg-3, .bgmov {
     position: relative;
-    opacity: 0.65;
+    opacity: 0.8;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   
   }
+
 .bgimg-1 {
     background-image: url("bilder/bild1.jpg");
     min-height: 100%;
@@ -36,6 +37,22 @@ bild info och höjd */
     background-image: url("bilder/litenBild.jpg");
     min-height: 500px;
   }
+
+  .bgmov {
+    position: relative;
+    height: 500px; 
+    overflow: hidden;
+}
+
+.bgmov iframe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+    height: 100vh;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
   
 .caption {
     position: absolute;
