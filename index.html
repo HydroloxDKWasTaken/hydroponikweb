@@ -4,18 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menuStyle.css">
     <title>Document</title>
 </head>
 <body>
+    <div style="float:left; position:fixed;z-index:999;">
+        <div class="sidenav">
+            <span class="btn" href=""><i class="las la-bars la-2x"></i>hello</span>
+            <script src="scripts/menu.js"></script>
+            <div class="items">
+                <ul>
+                    <li><a href="dokumentationer.html">Dokumentationer</a></li>
+                    <li><a href="#info_headder">About</a></li>
+                    <li><a href="#blog_head">konstruktion</a></li>
+                    <li><a href="#stream_head">Strömmen</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
     <div class="bgimg-1">
+        
         <div class="caption">
             <span class="border">Hydroponuys</span>
         </div>
     </div>
+    
+    
 
     <div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
-        <h3 style="text-align:center;">Info eller nåt</h3>
-        <p>
+        <h3 id="info_headder">Info eller nåt</h3>
+        <p>    
             Lorem ipsum dolor sit amet consectetur adipisicing elit. 
             Dolor atque sit asperiores quia est veritatis corporis 
             reiciendis laudantium voluptates consequuntur, quasi cumque, 
@@ -47,7 +65,7 @@
     </div>
 
     <div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
-        <h3 style="text-align:center;">Någon annan Info</h3>
+        <h3 id="blog_head">Boggen</h3>
         <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. 
             Dolor atque sit asperiores quia est veritatis corporis 
@@ -86,7 +104,7 @@
     </div>
 
     <div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
-        <h3 style="text-align:center;">Ytterligare någon info</h3>
+        <h3 id="stream_head">streamen</h3>
         <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. 
             Dolor atque sit asperiores quia est veritatis corporis 
@@ -114,6 +132,8 @@
             iure voluptatem cupiditate alias aliquid doloremque, possimus esse?
         </p>
     </div>
+
+    
     
 </body>
 </html>
