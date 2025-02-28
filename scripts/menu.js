@@ -11,9 +11,9 @@ document.addEventListener("DOMContentLoaded", () => {
     console.log(menuLinks);
     // Stäng menyn när man klickar på en länk
     menuLinks.forEach(link => {
-        console.log("sork");
+        
         link.addEventListener("click", () => {
-            console.log("Hej världen!");
+            
             document.body.classList.remove("active");
         });
     });
