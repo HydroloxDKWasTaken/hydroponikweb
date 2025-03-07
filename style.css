@@ -6,7 +6,6 @@ body, html {
     margin: 0;
     color:#777;
     font: 400 15px/1.8 "Lato", sans-serif;
-    
     scroll-behavior: smooth;
 }
  
@@ -21,8 +20,6 @@ bild info och höjd */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 20px;
-  
   }
 
 .bgimg-1 {
@@ -33,11 +30,13 @@ bild info och höjd */
 .bgimg-2 {
     background-image: url("bilder/hydroOdlTestusteronusMASTERSARIUSWARIUS.jpg");
     min-height: 500px;
+    max-height: 500px;
   }
   
 .bgimg-3 {
     background-image: url("bilder/litenBild.jpg");
     min-height: 500px;
+    max-height: 500px;
   }
 
   .bgmov {
@@ -80,40 +79,42 @@ h3 {
     color: #111;
   }
 
-.boxgrid {
+  .boxgrid {
     display: grid;
-    gap: 0;
-    grid-template-columns: repeat(auto-fit, minmax(1000px, fr));
-    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 20px;
+    margin: 0;
+    background: rgba(81, 81, 81, 0.426);
+    border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(5px);
-    max-width: auto;
-    background: rgba(255, 255, 255, 0.1);
-    margin-left: 0 ; 
-    text-align: center;
-  }
-  
-  .boxgrid h1 {
-    grid-column: 1/ -1;
-    
+    padding-top: 20px;
+    width: 100%;
   }
   
   .docubox {
     display: flex; 
     justify-content: center; 
-    align-items: top; 
-    background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 10px;
-    text-align: center;
-    padding: 20px;
+    align-items: center; 
+    background-color: rgba(45, 45, 45, 0.547);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
     transition: transform 0.2s, box-shadow 0.2s;
     text-decoration: none;
-    font-weight: bold; 
-    height: 200px;
-    width: auto; 
+    font-weight: bold;
+    color:white; 
+
+    height: 190px;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    
+    
   }
   
   .docubox:hover {
     transform: translateY(-5px);
+  }
+
+  .docubox:visited {
+    color: white;
   }
