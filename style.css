@@ -78,3 +78,43 @@ h3 {
     font: 20px "Lato", sans-serif;
     color: #111;
   }
+
+  .boxgrid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    max-width: 1200px;
+    background: rgba(255, 255, 255, 0.1);
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .boxgrid h1 {
+    grid-column: 1 / -1;
+    margin-bottom: 20px; 
+  }
+  
+  .docubox {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-decoration: none;
+    font-weight: bold; 
+    height: 150px; 
+  }
+  
+  .docubox:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
