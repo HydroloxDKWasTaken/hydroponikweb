@@ -21,6 +21,7 @@ bild info och höjd */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 20px;
   
   }
 
@@ -84,12 +85,11 @@ h3 {
     gap: 20px;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     width: 80%;
-    border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(1px);
     max-width: 1200px;
-    background: rgba(255, 255, 255, 0.1);
-    margin: 20px auto;
+    background: rgba(255, 255, 255, 0.8);
+    margin: auto;
     padding: 20px;
     text-align: center;
   }
