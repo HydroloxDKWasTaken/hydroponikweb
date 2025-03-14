@@ -1,120 +1,115 @@
-
 /* Jag har fixat paralaxen. Lek lite med färger och sånt och se om ni kan embedda livestreamen */
 
 body, html {
-    height: 100%;
-    margin: 0;
-    color:#777;
-    font: 400 15px/1.8 "Lato", sans-serif;
-    scroll-behavior: smooth;
+  height: 100%;
+  margin: 0;
+  color:#777;
+  font: 400 1vw/1.8 "Lato", sans-serif;
+  scroll-behavior: smooth;
 }
- 
+
 /* För att skapa en ny backgrundsbild så lägger ni till namnet här 
 och lägger till en klass med namnet nedanför som bara innehåller 
 bild info och höjd */
 
 .bgimg-1, .bgimg-2, .bgimg-3, .bgmov {
-    position: relative;
-    opacity: 0.8;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+  position: relative;
+  opacity: 0.8;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 .bgimg-1 {
-    background-image: url("bilder/bild1.jpg");
-    min-height: 100%;
-  }
-  
-.bgimg-2 {
-    background-image: url("bilder/hydroOdlTestusteronusMASTERSARIUSWARIUS.jpg");
-    min-height: 500px;
-    max-height: 500px;
-  }
-  
-.bgimg-3 {
-    background-image: url("bilder/litenBild.jpg");
-    min-height: 500px;
-    max-height: 500px;
-  }
+  background-image: url("bilder/bild1.jpg");
+  min-height: 100vh;
+}
 
-  .bgmov {
-    position: relative;
-    height: 500px; 
-    overflow: hidden;
+.bgimg-2 {
+  background-image: url("bilder/hydroOdlTestusteronusMASTERSARIUSWARIUS.jpg");
+  min-height: 70vh;
+  max-height: 70vh;
+}
+
+.bgimg-3 {
+  background-image: url("bilder/litenBild.jpg");
+  min-height: 70vh;
+  max-height: 70vh;
+}
+
+.bgmov {
+  position: relative;
+  height: 60vh;
+  overflow: hidden;
 }
 
 .bgmov iframe {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100vw;
-    height: 100vh;
-    transform: translate(-50%, -50%);
-    z-index: -1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100vw;
+  height: 100vh;
+  transform: translate(-50%, -50%);
+  z-index: -1;
 }
-  
+
 .caption {
-    position: absolute;
-    left: 0;
-    top: 50%;
-    width: 100%;
-    text-align: center;
-    color: #000;
-  }
-  
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
 .caption span.border {
-    background-color: #111;
-    color: #fff;
-    padding: 18px;
-    font-size: 25px;
-    letter-spacing: 10px; 
-  }
-  
+  background-color: #111;
+  color: #fff;
+  padding: 1.5vw;
+  font-size: 2vw;
+  letter-spacing: 1vw;
+}
+
 h3 {
-    letter-spacing: 5px;
-    text-transform: uppercase;
-    font: 20px "Lato", sans-serif;
-    color: #111;
-  }
+  letter-spacing: 0.5vw;
+  text-transform: uppercase;
+  font: 2vw "Lato", sans-serif;
+  color: #111;
+}
 
-  .boxgrid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-    gap: 20px;
-    margin: 0;
-    background: rgba(81, 81, 81, 0.426);
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-    padding-top: 20px;
-    width: 100%;
-  }
-  
-  .docubox {
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    background-color: rgba(45, 45, 45, 0.547);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    
-    transition: transform 0.2s, box-shadow 0.2s;
-    text-decoration: none;
-    font-weight: bold;
-    color:white; 
+.boxgrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2vh;
+  margin: 0;
+  background: rgba(81, 81, 81, 0.426);
+  border-radius: 1vw;
+  box-shadow: 0 0.4vw 1.5vw rgba(0, 0, 0, 0.5);
+  padding-top: 2vh;
+  width: 100%;
+}
 
-    height: 190px;
-    border-radius: 10px;
-    padding: 20px;
-    text-align: center;
-    
-    
-  }
-  
-  .docubox:hover {
-    transform: translateY(-5px);
-  }
+.docubox {
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  background-color: rgba(45, 45, 45, 0.547);
+  box-shadow: 0 0.4vw 0.6vw rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  text-decoration: none;
+  font-weight: bold;
+  color: white; 
+  height: 25vh;
+  border-radius: 1vw;
+  padding: 2vw;
+  text-align: center;
+}
 
-  .docubox:visited {
-    color: white;
-  }
+.docubox:hover {
+  transform: translateY(-0.5vw);
+}
+
+.docubox:visited {
+  color: white;
+}
