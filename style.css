@@ -1,3 +1,4 @@
+
 /* Jag har fixat paralaxen. Lek lite med färger och sånt och se om ni kan embedda livestreamen */
 
 body, html {
@@ -6,6 +7,38 @@ body, html {
   color:#777;
   font: 400 1vw/1.8 "Lato", sans-serif;
   scroll-behavior: smooth;
+}
+
+#menu {
+  background-color: #d2d2ce;
+  width: 100%;
+  margin-right: 20%;
+  height: auto;
+  text-align: center;
+}
+
+.button {
+  display: inline-block;
+  
+  border-width: 10px;
+  border: #111;
+  color: #000000;
+  text-align: center;
+  font-size: 22px;
+  background-color: rgba(250,250,250,0.2);
+  
+  width: 30%;
+  height: 50px;
+  transition: all 0.1s;
+  cursor: pointer;
+  margin: 1px;
+  
+}
+.button:hover {
+  background-color: rgba(250,250,250,0.6);
+}
+.button:visited {
+  background-color: rgba(250,250,250,0.6);
 }
 
 /* För att skapa en ny backgrundsbild så lägger ni till namnet här 
@@ -27,7 +60,7 @@ bild info och höjd */
 }
 
 .bgimg-2 {
-  background-image: url("bilder/hydroOdlTestusteronusMASTERSARIUSWARIUS.jpg");
+  background-image: url("bilder/fixarRor.jpg");
   min-height: 70vh;
   max-height: 70vh;
 }
