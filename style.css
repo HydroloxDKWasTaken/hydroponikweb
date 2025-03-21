@@ -7,6 +7,39 @@ body, html {
   scroll-behavior: smooth;
 }
 
+#menu {
+  background-color:  rgba(55, 55, 55);
+  width: 100%;
+  margin-right: 20%;
+  height: auto;
+  text-align: left;
+}
+
+
+.button {
+  display: inline-block;
+  
+  border-width: 10px;
+  border: #111;
+  color: #ffffff;
+  text-align: center;
+  font-size: 22px;
+  background-color: rgba(75,75,75,0.2);
+  
+  width: 20%;
+  height: 50px;
+  transition: all 0.1s;
+  cursor: pointer;
+  margin: 1px;
+  
+}
+.button:hover {
+  background-color: rgba(75,75,75,1);
+}
+.button:visited {
+  background-color: rgba(75,75,75,0.2);
+}
+
 .infoSpace {
   color: rgb(200, 200, 200);
   background-color:rgb(55, 55, 55);
@@ -30,7 +63,7 @@ body, html {
 }
 
 .bgimg-2 {
-  background-image: url("bilder/hydroOdlTestusteronusMASTERSARIUSWARIUS.jpg");
+  background-image: url("bilder/fixarRor.jpg");
   min-height: 70vh;
   max-height: 70vh;
 }
