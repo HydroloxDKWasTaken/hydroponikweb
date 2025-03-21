@@ -75,24 +75,33 @@ h3 {
   letter-spacing: 0.5vw;
   text-transform: uppercase;
   font: 2vw "Lato", sans-serif;
-  color: #111;
+  color: #1c1c1c;
+}
+
+.documentsContainer {
+  background-color: rgb(55, 55, 55);
+  width: 100%;
+  height: fit-content;
+  margin: 0;
+  color: white;
 }
 
 .boxgrid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 2vh;
-  margin: 0;
+  margin: auto;
   background: rgba(81, 81, 81, 0.426);
   border-radius: 1vw;
   box-shadow: 0 0.4vw 1.5vw rgba(0, 0, 0, 0.5);
-  padding-top: 2vh;
-  width: 100%;
+  padding: 2vh;
+  width: 80%;
 }
 
 .docubox {
   display: flex; 
-  justify-content: center; 
+  flex-direction: column;
+  justify-content: space-evenly; 
   align-items: center; 
   background-color: rgba(45, 45, 45, 0.547);
   box-shadow: 0 0.4vw 0.6vw rgba(0, 0, 0, 0.1);
@@ -100,9 +109,9 @@ h3 {
   text-decoration: none;
   font-weight: bold;
   color: white; 
-  height: 25vh;
+  height: fit-content;
   border-radius: 1vw;
-  padding: 2vw;
+  padding-bottom: 2vh;
   text-align: center;
 }
 
@@ -112,4 +121,8 @@ h3 {
 
 .docubox:visited {
   color: white;
+}
+
+.docubild {
+  width: 90%;
 }
