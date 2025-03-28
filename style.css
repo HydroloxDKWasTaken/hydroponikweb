@@ -7,19 +7,33 @@ body, html {
   scroll-behavior: smooth;
 }
 
+#logo {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
 #menu {
   background-color:  rgba(55, 55, 55);
   width: 100%;
   margin-right: 20%;
   height: auto;
   text-align: left;
+  display: flex;
+  align-items: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
+#logo {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
 
-.button {
+#menu > a:not(:has(#logo)) {
   display: inline-block;
   
   border-width: 10px;
+  text-decoration: none;
   border: #111;
   color: #ffffff;
   text-align: center;
@@ -27,16 +41,17 @@ body, html {
   background-color: rgba(75,75,75,0.2);
   
   width: 20%;
-  height: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   transition: all 0.1s;
   cursor: pointer;
   margin: 1px;
   
 }
-.button:hover {
+#menu > a:hover:not(:has(#logo)) {
   background-color: rgba(75,75,75,1);
 }
-.button:visited {
+#menu > a:visited:not(:has(#logo)) {
   background-color: rgba(75,75,75,0.2);
 }
 
