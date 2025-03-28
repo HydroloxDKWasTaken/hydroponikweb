@@ -20,13 +20,14 @@ body, html {
   text-align: left;
   display: flex;
   align-items: center;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
 }
-
+a:has(#logo) {
+  display: flex;
+}
 #logo {
   padding-left: 1rem;
   padding-right: 1rem;
+  max-width: 30vw;
 }
 
 #menu > a:not(:has(#logo)) {
@@ -41,6 +42,7 @@ body, html {
   background-color: rgba(75,75,75,0.2);
   
   width: 20%;
+  max-width: 20%;
   padding-top: 10px;
   padding-bottom: 10px;
   transition: all 0.1s;
