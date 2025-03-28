@@ -135,6 +135,12 @@ h3 {
   width: 80%;
 }
 
+@media (max-width: 960px) {
+  .boxgrid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
 .docubox {
   display: flex; 
   flex-direction: column;
