@@ -7,19 +7,33 @@ body, html {
   scroll-behavior: smooth;
 }
 
+#logo {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
 #menu {
   background-color:  rgba(55, 55, 55);
   width: 100%;
   margin-right: 20%;
   height: auto;
   text-align: left;
+  display: flex;
+  align-items: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
+#logo {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
 
-.button {
+#menu > a:not(:has(#logo)) {
   display: inline-block;
   
   border-width: 10px;
+  text-decoration: none;
   border: #111;
   color: #ffffff;
   text-align: center;
@@ -27,22 +41,27 @@ body, html {
   background-color: rgba(75,75,75,0.2);
   
   width: 20%;
-  height: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   transition: all 0.1s;
   cursor: pointer;
   margin: 1px;
   
 }
-.button:hover {
+#menu > a:hover:not(:has(#logo)) {
   background-color: rgba(75,75,75,1);
 }
-.button:visited {
+#menu > a:visited:not(:has(#logo)) {
   background-color: rgba(75,75,75,0.2);
 }
 
-/* För att skapa en ny backgrundsbild så lägger ni till namnet här 
-och lägger till en klass med namnet nedanför som bara innehåller 
-bild info och höjd */
+.infoSpace {
+  color: rgb(200, 200, 200);
+  background-color:rgb(55, 55, 55);
+  text-align:center;
+  padding:5vh 15vh;
+  text-align: justify;
+}
 
 .bgimg-1, .bgimg-2, .bgimg-3, .bgmov {
   position: relative;
@@ -98,20 +117,26 @@ bild info och höjd */
 .caption span.border {
   background-color: #111;
   color: #fff;
-  padding: 1.5vw;
-  font-size: 2vw;
-  letter-spacing: 1vw;
+  padding: 1.5rem;
+  font-size: 2em;
+  letter-spacing: 1.0rem;
+}
+@media (max-width: 960px) {
+  .caption span.border {
+    font-size: 7.5em !important;
+    letter-spacing: 1.5rem;
+  }
 }
 
 h3 {
   letter-spacing: 0.5vw;
   text-transform: uppercase;
   font: 2vw "Lato", sans-serif;
-  color: #1c1c1c;
+  color: white;
 }
 
 .documentsContainer {
-  background-color: #111;
+  background-color: rgb(55, 55, 55);
   width: 100%;
   height: fit-content;
   margin: 0;
@@ -131,6 +156,12 @@ h3 {
   width: 80%;
 }
 
+@media (max-width: 960px) {
+  .boxgrid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
 .docubox {
   display: flex; 
   flex-direction: column;
@@ -146,6 +177,12 @@ h3 {
   border-radius: 1vw;
   padding-bottom: 2vh;
   text-align: center;
+}
+
+@media (max-width: 960px) {
+  .docubox {
+    font-size: large;
+  }
 }
 
 .docubox:hover {
