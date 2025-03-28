@@ -63,7 +63,7 @@ body, html {
   text-align: justify;
 }
 
-.bgimg-1, .bgimg-2, .bgimg-3, .bgmov {
+.bgimg {
   position: relative;
   opacity: 0.8;
   background-attachment: fixed;
@@ -72,30 +72,37 @@ body, html {
   background-size: cover;
 }
 
-.bgimg-1 {
+
+#bgimg-1 {
   background-image: url("bilder/bild1.jpg");
   min-height: 100vh;
 }
 
-.bgimg-2 {
+#bgimg-2 {
   background-image: url("bilder/fixarRor.jpg");
   min-height: 70vh;
   max-height: 70vh;
 }
 
-.bgimg-3 {
+#bgimg-3 {
   background-image: url("bilder/litenBild.jpg");
   min-height: 70vh;
   max-height: 70vh;
 }
 
-.bgmov {
+#bgimg-4 {
+  background-image: url("bilder/cvba.png");
+  min-height: 70vh;
+  max-height: 70vh;
+}
+
+#bgmov {
   position: relative;
   height: 60vh;
   overflow: hidden;
 }
 
-.bgmov iframe {
+#bgmov iframe {
   position: absolute;
   top: 50%;
   left: 50%;
