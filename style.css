@@ -34,28 +34,38 @@ a:has(#logo) {
   display: inline-block;
   
   border-width: 10px;
-  text-decoration: none;
+  text-decoration: none; 
   border: #111;
   color: #ffffff;
   text-align: center;
-  font-size: 22px;
+  font-size: 2rem;
   background-color: rgba(75,75,75,0.2);
   
   width: 20%;
   max-width: 20%;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   transition: all 0.1s;
   cursor: pointer;
-  margin: 1px;
+  margin: 0.1rem;
+  
   
 }
+
 #menu > a:hover:not(:has(#logo)) {
   background-color: rgba(75,75,75,1);
+  color: rgb(44, 160, 90);
 }
 #menu > a:visited:not(:has(#logo)) {
   background-color: rgba(75,75,75,0.2);
 }
+@media (max-width: 960px) {
+  #menu > a:not(:has(#logo)) {
+    font-size: auto;
+  
+  }
+}
+
 
 .infoSpace {
   color: rgb(200, 200, 200);
@@ -63,6 +73,30 @@ a:has(#logo) {
   text-align:center;
   padding:5vh 15vh;
   text-align: justify;
+}
+@media (max-width: 960px) {
+  .infoSpace{
+    font-size: 4em !important;
+    padding:1vh 5vh;
+    
+  }
+  .infoSpace h3{
+    font-size: 1em !important;
+    
+  }
+}
+.smlimgbox {
+  max-width: 100%;
+  margin:0px;
+}
+.smlimgbox img {
+  width: 49%;
+}
+
+@media (max-width: 960px) {
+  .smlimgbox img{
+    width: 100%;
+  }
 }
 
 .bgimg {
@@ -93,14 +127,14 @@ a:has(#logo) {
 }
 
 #bgimg-4 {
-  background-image: url("bilder/cvba.png");
-  min-height: 70vh;
-  max-height: 70vh;
+  background-image: url("bilder/flodet.png");
+  min-height: 120vh;
+  max-height: 120vh;
 }
 
 #bgmov {
   position: relative;
-  height: 60vh;
+  height: 80vh;
   overflow: hidden;
 }
 
