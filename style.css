@@ -20,6 +20,8 @@ body, html {
   text-align: left;
   display: flex;
   align-items: center;
+  position: fixed;
+  z-index: 12;
 }
 a:has(#logo) {
   display: flex;
@@ -134,7 +136,7 @@ a:has(#logo) {
 
 #bgmov {
   position: relative;
-  height: 80vh;
+  height: 90vh;
   overflow: hidden;
 }
 
