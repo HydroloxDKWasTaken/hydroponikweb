@@ -123,10 +123,10 @@ a:has(#logo) {
 @media (max-width: 960px) {
  .bgimg {
   background-attachment: scroll;
-  background-size:auto;
+  
   height: auto;
-  min-height: unset;
-  padding: 50vh 0;
+  
+  
 }
   
 }
