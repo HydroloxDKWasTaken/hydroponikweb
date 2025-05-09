@@ -114,13 +114,19 @@ a:has(#logo) {
 .bgimg {
   position: relative;
   opacity: 0.8;
-  /* background-attachment: fixed; */
+  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   max-width: 100%;
 }
 @media (max-width: 960px) {
+ .bgimg {
+  background-attachment: scroll;
+  height: auto;
+  min-height: unset;
+  padding: 50vh 0;
+}
   
 }
 
