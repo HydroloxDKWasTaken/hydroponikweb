@@ -118,11 +118,12 @@ a:has(#logo) {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  max-width: 100%;
+  
 }
 @media (max-width: 960px) {
  .bgimg {
   background-attachment: scroll;
+  background-size:auto;
   height: auto;
   min-height: unset;
   padding: 50vh 0;
