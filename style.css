@@ -64,7 +64,17 @@ a:has(#logo) {
 @media (max-width: 960px) {
   #menu > a:not(:has(#logo)) {
     font-size: auto;
-  
+    font-size: 2vh;
+    margin: 0;
+    max-width: 20%;
+    line-break: auto;
+  }
+  #logo {
+    max-width: 5vw;
+  }
+  #menu a{
+    height: 5vh;
+
   }
 }
 
@@ -117,7 +127,7 @@ a:has(#logo) {
 }
 
 #bgimg-2 {
-  background-image: url("bilder/fixarRor.jpg");
+  background-image: url("bilder/te22cback.png");
   min-height: 70vh;
   max-height: 70vh;
 }
