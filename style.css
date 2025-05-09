@@ -118,6 +118,12 @@ a:has(#logo) {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  max-width: 100%;
+}
+@media (max-width: 960px) {
+  .bgimg {
+    background-attachment: scroll;
+  }
 }
 
 
@@ -125,7 +131,7 @@ a:has(#logo) {
   background-image: url("bilder/bild1.jpg");
   min-height: 100vh;
   max-width: 100%;
-  object-fit: cover;
+  
 }
 
 #bgimg-2 {
@@ -133,7 +139,7 @@ a:has(#logo) {
   min-height: 70vh;
   max-height: 70vh;
   max-width: 100%;
-  object-fit:contain;
+ 
   
 }
 
@@ -150,7 +156,6 @@ a:has(#logo) {
   min-height: 120vh;
   max-height: 120vh;
   max-width: 100%;
-  object-fit: fill;
   
 }
 
